@@ -52,4 +52,4 @@ class Div:
         right = f"( {repr(self.p2)} )" if isinstance(self.p2, (Add, Sub, Mul)) else repr(self.p2)
         return left + " / " + right
 poly = Add( Add( Int(4), Int(3)), Add( X(), Mul( Int(1), Add( Mul(X(), X()), Int(1)))))
-print(poly)
+print(poly.evaluate(-1))
